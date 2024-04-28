@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Clinic</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5"> <!--Margin top 5-->
+        <h2 class="mb-4">Add New Patient</h2>
+        <form id="addPatientForm">
+            <input type="hidden" id="patientId"> <!-- Hide patient ID -->
+            <div class="form-group"> <!--Form gives quick 'styling' -->
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter full name" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required> <!-- required means the form NEEDS to complete this part -->
+            </div>
+            <div class="form-group">
+                <label for="appointmentTime">Appointment Time</label>
+                <input type="datetime-local" class="form-control" id="appointmentTime" required>
+            </div>
+            <div class="form-group">
+                <label for="reasonForVisit">Reason for Visit</label>
+                <textarea class="form-control" id="reasonForVisit" rows="3" placeholder="Enter reason for visit" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    
+        <h2 class="mt-5 mb-4">Patient List</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Date of Birth</th>
+                    <th>Appointment Time</th>
+                    <th>Reason for Visit</th>
+                    <th>Action</th> <!-- Edit and delete -->
+                </tr>
+            </thead>
+            <tbody id="patientTableBody">
+                <!-- New patient data will be put here -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

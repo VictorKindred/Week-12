@@ -1,0 +1,39 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "fullName": "Mario",
+      "dob": "September 13, 1985",
+      "appointmentTime": "2024-05-04T09:00",
+      "reasonForVisit": "Injured during a battle with Bowser, needs medical attention"
+    },
+    {
+      "id": 2,
+      "fullName": "Spongebob",
+      "dob": "May 1, 1999",
+      "appointmentTime": "2024-05-04T11:30",
+      "reasonForVisit": "Possible jellyfish sting, experiencing discomfort"
+    },
+    {
+      "id": 3,
+      "fullName": "Hello Kitty",
+      "dob": "November 1, 1974",
+      "appointmentTime": "2024-05-04T14:00",
+      "reasonForVisit": "Routine check-up and vaccination"
+    },
+    {
+      "id": 4,
+      "fullName": "Darth Vader",
+      "dob": "Unknown",
+      "appointmentTime": "2024-05-04T16:30",
+      "reasonForVisit": "Breathing problems, seeking medical assistance"
+    },
+    {
+      "id": "ab04",
+      "fullName": "Victor Valencia",
+      "dob": "1998-03-27",
+      "appointmentTime": "2024-04-17T03:24",
+      "reasonForVisit": "Plasma Donation"
+    }
+  ]
+}
